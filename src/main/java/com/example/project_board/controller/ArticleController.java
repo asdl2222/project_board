@@ -1,5 +1,12 @@
 package com.example.project_board.controller;
 
+import com.example.project_board.domain.type.SearchType;
+import com.example.project_board.dto.request.ArticleRequest;
+import com.example.project_board.dto.response.ArticleResponse;
+import com.example.project_board.dto.response.ArticleWithCommentsResponse;
+import com.example.project_board.dto.security.BoardPrincipal;
+import com.example.project_board.repository.PaginationService;
+import com.example.project_board.service.ArticleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
